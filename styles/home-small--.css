@@ -1,0 +1,68 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    /* Hide desktop navigation */
+    nav ul {
+        display: none;
+    }
+
+    /* Show hamburger menu */
+    .ham-menu {
+        display: block;
+    }
+
+    /* Off-screen menu styles */
+    .off-screen-menu {
+        background-color: rgb(34, 37, 49);
+        height: 100vh;
+        width: 100%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        /* Add padding to the off-screen menu */
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+    }
+
+    .off-screen-menu.active {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    /* .off-screen-menu ul {
+        list-style: none;
+        padding: 0;
+    } */
+
+    .off-screen-menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .off-screen-menu li {
+        margin: 1rem 0;
+    }
+
+    /* 
+    .off-screen-menu a {
+        color: #fff;
+        font-size: 1.5rem;
+    } */
+
+    .off-screen-menu a {
+        color: #fff;
+        font-size: 1.5rem;
+        display: block;
+        padding: 0.5rem 0;
+    }
+}

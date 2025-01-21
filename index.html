@@ -8,13 +8,13 @@
     <meta name="description" content="A brief description of my website." />
     <meta name="author" content="Your Name" />
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="script" href="scripts/home.js">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <script type="text/javascript" src="scripts/home.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>My Website</h1>
-        <nav>
+        <div class="off-screen-menu">
             <ul>
                 <li><a href="#" aria-current="page">Home</a></li>
                 <li><a href="#">Chamber</a></li>
@@ -23,7 +23,16 @@
                     <a href="https://www.linkedin.com/in/your-linkedin-profile-url">LinkedIn</a>
                 </li>
             </ul>
+        </div>
+
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
+
     </header>
     <main>
         <section>
