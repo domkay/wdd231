@@ -1,0 +1,101 @@
+/* Root Variables */
+:root {
+    --primary-color: #f72585;
+    /* Rose */
+    --secondary-color: #7209b7;
+    /* Grape */
+    --accent-color1: #3a0ca3;
+    /* Zaffre */
+    --accent-color2: #4361ee;
+    /* Neon Blue */
+    --hover-color: #ff69b4;
+    /* Hover effect color */
+    --font-family-main: 'Montserrat', sans-serif;
+    --font-family-alt: 'Lora', serif;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-family-main);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.logo {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+}
+
+menu::before {
+    content: "≡"
+}
+
+nav {
+    background-color: #706565;
+    color: #f72585;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+    text-decoration: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    color: #000;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: #000;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
