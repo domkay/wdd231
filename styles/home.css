@@ -215,11 +215,16 @@ footer {
         justify-content: space-around;
     }
 
-    #course-list {
-        /* display: grid; */
+    /* #course-list {
+        display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-        width: auto;
+        align-items: center;
+    } */
+    #course-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
 
@@ -232,7 +237,8 @@ footer {
 
     #course-list {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
         justify-items: center;
     }
+
 }
