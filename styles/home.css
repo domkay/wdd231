@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
 * {
     padding: 0;
     margin: 0;
@@ -9,34 +7,49 @@
 body {
     background-color: #353836;
     color: white;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#currentpage {
+    text-decoration: underline;
 }
 
 header a {
     text-decoration: none;
 }
 
-header {
-    padding: 0 20px;
-    background-color: #1d1f1d;
-    height: 50px;
+header nav {
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Add some space between logo and header_bottom */
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+#header_bottom {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
 }
 
-#brand {
-    font-weight: bold;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-
-#brand a {
-    color: #09c372;
-}
-
-ul {
+header ul {
     list-style: none;
     height: 100%;
     display: flex;
@@ -44,44 +57,21 @@ ul {
     justify-content: space-around;
 }
 
-ul a {
+header ul a {
     color: white;
 }
 
-ul li {
+header ul li {
     padding: 5px;
     margin-left: 10px;
 }
 
-ul li:hover {
+header ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-#login,
-#signup {
-    border-radius: 5px;
-    padding: 5px 8px;
-}
-
-#login {
-    border: 1px solid #498afb;
-}
-
-#signup {
-    border: 1px solid #ff3860;
-}
-
-#signup a {
-    color: #ff3860;
-}
-
-#login a {
-    color: #498afb;
-}
-
 #hamburger-icon {
-    margin: auto 0;
     display: none;
     cursor: pointer;
     padding: 10px;
@@ -109,19 +99,21 @@ ul li:hover {
 
 .mobile-menu {
     position: absolute;
-    top: 50px;
+    top: 126px;
     left: 0;
-    height: calc(100vh - 50px);
+    height: calc(48vh - 50px);
     width: 100%;
     background-color: #1d1f1d;
     padding: 20px;
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     z-index: 1000;
-    /* Ensure the menu is on top */
+    /*Ensure the menu is on top */
     transition: transform 0.3s ease-in-out;
     transform: translateY(-100%);
+
 }
 
 .mobile-menu.active {
@@ -131,12 +123,11 @@ ul li:hover {
 
 .mobile-menu a {
     color: white;
-    margin: 15px 0;
+    margin: 15px;
     font-size: 18px;
     text-align: center;
-    width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #353836;
+    border-bottom: none;
 }
 
 .mobile-menu a:hover {
@@ -144,8 +135,68 @@ ul li:hover {
     transition: background-color 0.3s;
 }
 
+#maintop {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* margin: 10px; */
+    /* padding: 1px; */
+    min-height: 200px;
+}
+
+main section {
+    margin: 10px;
+    /* padding: 1px; */
+    border: solid 1px;
+}
+
+main h2 {
+    text-align: center;
+    border: solid 1px;
+}
+
+#maintop ul {
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1d1f1d;
+    color: white;
+}
+
+/*--------------------------------------------------------------------------
+-------------------------------------------------------------------------- */
+/*Courses section*/
+#course-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 250px;
+    /* Adjust width as needed */
+}
+
+.course-card.completed {
+    background-color: #28a745;
+    /* Green for completed courses */
+    color: white;
+}
+
+/*--------------------------------------------------------------------------
+-------------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
-    header nav {
+    #header_bottom {
+        justify-content: space-between;
+    }
+
+    #header_bottom nav {
         display: none;
     }
 
@@ -153,11 +204,18 @@ ul li:hover {
         display: block;
     }
 
-    ul {
+    /* .mobile-menu {
+        flex-direction: row;
+        justify-content: space-around;
+    } */
 
-        list-style: none;
-        display: flex;
+    ul {
         flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+    }
+
+    #maintop {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
