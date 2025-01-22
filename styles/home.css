@@ -10,6 +10,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+p {
+    color: white;
+}
+
 header {
     padding: 0 20px;
     background-color: #1d1f1d;
@@ -185,7 +189,7 @@ footer {
 }
 
 .course-card.completed {
-    background-color: #28a745;
+    background-color: #ca0606c7;
     /* Green for completed courses */
     color: white;
 }
