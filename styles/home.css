@@ -171,7 +171,8 @@ footer {
 #course-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    justify-items: center;
+    justify-content: space-evenly;
 }
 
 .course-card {
@@ -179,7 +180,7 @@ footer {
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
-    width: 250px;
+    width: 80%;
     /* Adjust width as needed */
 }
 
@@ -214,8 +215,24 @@ footer {
         justify-content: space-around;
     }
 
+    #course-list {
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
     #maintop {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    #course-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 }
