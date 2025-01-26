@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Kinshasa Tech Hub",
+    "address": "Avenue du 30 Juin, Kinshasa, DRC",
+    "phone": "+243 999 999 999",
+    "website": "https://kinshasatechhub.com",
+    "image": "kinshasa_tech_hub.jpg",
+    "membershipLevel": 3, 
+    "category": "Technology",
+    "description": "A co-working space and technology incubator."
+  },
+  {
+    "name": "Le Rendez-Vous des Chefs",
+    "address": "Gombe, Kinshasa, DRC",
+    "phone": "+243 888 888 888",
+    "website": "https://lerdv.com",
+    "image": "restaurant_logo.png",
+    "membershipLevel": 2,
+    "category": "Restaurant",
+    "description": "Fine dining restaurant with a focus on local cuisine."
+  },
+  {
+    "name": "Kinshasa Boutique Hotel",
+    "address": "Avenue de l'Université, Kinshasa, DRC",
+    "phone": "+243 777 777 777",
+    "website": "https://kinshasahotel.com",
+    "image": "hotel_logo.jpg",
+    "membershipLevel": 1,
+    "category": "Hospitality",
+    "description": "Luxury hotel with modern amenities and excellent service."
+  },
+  {
+    "name": "Kinshasa Art Gallery",
+    "address": "Gombe, Kinshasa, DRC",
+    "phone": "+243 666 666 666",
+    "website": "https://kinshasaartgallery.com",
+    "image": "art_gallery_logo.png",
+    "membershipLevel": 2,
+    "category": "Arts & Culture",
+    "description": "Showcasing contemporary and traditional art from the Democratic Republic of the Congo."
+  },
+  {
+    "name": "Kinshasa Medical Center",
+    "address": "Limete, Kinshasa, DRC",
+    "phone": "+243 555 555 555",
+    "website": "https://kinshasamedical.com",
+    "image": "hospital_logo.png",
+    "membershipLevel": 3,
+    "category": "Healthcare",
+    "description": "A leading healthcare provider in Kinshasa."
+  },
+  {
+    "name": "Kinshasa Fashion Boutique",
+    "address": "Gombe, Kinshasa, DRC",
+    "phone": "+243 444 444 444",
+    "website": "https://kinshasafashion.com",
+    "image": "fashion_boutique_logo.png",
+    "membershipLevel": 1,
+    "category": "Fashion",
+    "description": "Stylish clothing and accessories for the modern Kinshasa resident."
+  },
+  {
+    "name": "Kinshasa Travel Agency",
+    "address": "Gombe, Kinshasa, DRC",
+    "phone": "+243 333 333 333",
+    "website": "https://kinshasatravel.com",
+    "image": "travel_agency_logo.png",
+    "membershipLevel": 2,
+    "category": "Travel",
+    "description": "Expert travel planning for domestic and international destinations."
+  }
+]

@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f0f0f0;
+    --text-color: #fff;
+    --link-color: #1e90ff;
+    --link-hover-color: #ff4500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allow navigation items to wrap on smaller screens */
+    gap: 1em;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#view-options {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#cards.grid-view .card {
+    display: inline-block;
+    width: 100%;
+    /* Default to full width */
+    max-width: 200px;
+    /* Max width for cards */
+    margin: 0.5em;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+#cards.list-view .card {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer section {
+    margin: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0.5em 0;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        gap: 1.5em;
+    }
+
+    #cards.grid-view .card {
+        width: calc(50% - 1em);
+        /* 2 cards per row */
+    }
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        gap: 2em;
+    }
+
+    #cards.grid-view .card {
+        width: calc(33.33% - 1em);
+        /* 3 cards per row */
+    }
+}
+
+@media (min-width: 1200px) {
+    nav ul {
+        gap: 2.5em;
+    }
+
+    #cards.grid-view .card {
+        width: calc(25% - 1em);
+        /* 4 cards per row */
+    }
+}
