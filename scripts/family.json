@@ -1,0 +1,38 @@
+{
+  "familyName": "Super Hero Squad",
+  "moveInYear": "2024-10-02",
+  "number": 6,
+  "visitted": true,
+  "members": [
+    {
+      "name": "Charlotte Karumbu",
+      "gender": "female",
+      "birthDate": "1954-01-11"
+    },
+    {
+      "name": "Hugues Mutatch",
+      "gender": "male",
+      "birthDate": "1977-01-08"
+    },
+    {
+      "name": "Sissy Mwamba",
+      "gender": "female",
+      "birthDate": "1981-05-21"
+    },
+    {
+      "name": "Olivia Karumbu",
+      "gender": "female",
+      "birthDate": "1984-03-10"
+    },
+    {
+      "name": "Clio Kabulo",
+      "gender": "female",
+      "birthDate": "1986-05-18"
+    },
+    {
+      "name": "Madji Kayombo",
+      "gender": "male",
+      "birthDate": "1986-05-18"
+    }
+    ]
+}

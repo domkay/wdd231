@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: #bbb;
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+}
+
+span {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(59, 126, 32);
+}
+
+#myButton::before {
+    content: "\2630"
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+.menuLinks {
+    padding: 0;
+}
+
+.menuLinks ul {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+ul.menuLinks li {
+    list-style: none;
+}
+
+ul.menuLinks li a {
+    /* border: pink dashed 1px; */
+    display: block;
+    padding: .75rem 2vw;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.current-menu-item {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul.menuLinks {
+    /* display: none; */
+    list-style-type: none;
+}
+
+/*Displaying the menu links when the button is clicked*/
+/* ul.menuLinks.open {
+    display: block;
+} */
+
+
+
+#myButton.open::before {
+    content: "X"
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+@media only screen and (min-width: 38rem) {
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+}
