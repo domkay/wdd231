@@ -26,16 +26,20 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Kinshasa Chamber of Commerce</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <div class="entete"><img src="images/chamber.png" width="34" height="40">
+            <h1>Kinshasa Chamber of Commerce</h1>
+            <button id="myButton"></button>
+        </div>
+        <nav class="menuAnime">
+            <ul class="menuLinks_ul">
+                <li><a href="index.html" class="currentPage">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>

@@ -15,27 +15,90 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 1px;
+    padding: 1px;
     background-color: var(--background-color);
 }
 
 header {
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 1em 0;
+    padding: .50em 0;
     text-align: center;
 }
 
-nav ul {
+.entete {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Hamburger menu styling */
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: relative;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5 ease-out;
+
+}
+
+nav.open {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5 ease-out;
+}
+
+
+
+.menuLinks_ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    justify-content: end;
     flex-wrap: wrap;
     /* Allow navigation items to wrap on smaller screens */
     gap: 1em;
+    display: none;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+
+
+.menuLinks_ul {
+    padding: 0;
+    justify-items: center;
+}
+
+nav.open .menuLinks_ul {
+    display: block;
+}
+
+ul.menuLinks_ul li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--text-color);
+    text-decoration: none;
+    justify-content: space-evenly;
 }
 
 nav a {
@@ -47,6 +110,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/*Way finding*/
+.currentPage {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Main styling*/
 main {
     padding: 1em;
     max-width: 1200px;
@@ -77,6 +146,7 @@ main {
     padding: 1em;
 }
 
+/* Footer styling */
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -105,13 +175,35 @@ footer ul li {
 
 @media (min-width: 600px) {
     nav ul {
+        display: flex;
         gap: 1.5em;
     }
 
-    #cards.grid-view .card {
-        width: calc(50% - 1em);
-        /* 2 cards per row */
+    #myButton {
+        display: none;
     }
+
+    nav.open .menuLinks_ul,
+    .menuLinks_ul {
+        padding: 0 10px;
+        display: flex;
+    }
+
+    /* .menuLinks_ul,
+    .menuLinks_ul .open {
+
+        display: flex;
+    } */
+
+    ul.menuLinks_ul a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* 
+    nav,
+    nav .open {
+        grid-template-rows: 1fr;
+    } */
 }
 
 @media (min-width: 900px) {
