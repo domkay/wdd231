@@ -1,15 +1,7 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
-// Get the last modified date of the HTML document
-const lastModified = document.lastModified;
-
-// Display the last modified date in the paragraph
-document.getElementById("lastModified").textContent += lastModified;
-
 // Display the members
 
 document.addEventListener("DOMContentLoaded", () => {
-  const url = "data/members.json"; // Update with the correct path to your JSON file
+  const url = "data/members.json";
   const cards = document.querySelector("#cards");
   const gridViewButton = document.getElementById("grid-view");
   const listViewButton = document.getElementById("list-view");

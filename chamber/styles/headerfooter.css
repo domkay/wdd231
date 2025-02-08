@@ -1,0 +1,214 @@
+/* CSS for Home Page */
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f0f0f0;
+    --text-color: #fff;
+    --link-color: #1e90ff;
+    --link-hover-color: #ff4500;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1px;
+    padding: 1px;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: .50em 0;
+    text-align: center;
+}
+
+.entete {
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Hamburger menu styling */
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: relative;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+
+}
+
+nav.open {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+.menuLinks_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 1em;
+    display: none;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.menuLinks_ul {
+    padding: 0;
+    justify-items: center;
+}
+
+nav.open .menuLinks_ul {
+    display: block;
+}
+
+ul.menuLinks_ul li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--text-color);
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*Way finding*/
+.currentPage {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+ul.menuLinks_ul a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main styling*/
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer styling */
+footer {
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer section {
+    margin: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0.5em 0;
+}
+
+@media (min-width: 700px) {
+    nav ul {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        border-radius: 5px;
+    }
+
+    #myButton {
+        display: none;
+    }
+
+    nav.open .menuLinks_ul,
+    .menuLinks_ul {
+        padding: 0 10px;
+        display: flex;
+    }
+
+    ul.menuLinks_ul a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        gap: 2em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    footer section {
+        margin: 10px;
+    }
+
+    .footer_social ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav ul {
+        gap: 2.5em;
+    }
+}
