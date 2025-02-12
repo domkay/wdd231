@@ -157,6 +157,11 @@ footer ul li {
     margin: 0.5em 0;
 }
 
+footer img {
+    width: 32px;
+    height: auto;
+}
+
 @media (min-width: 700px) {
     nav ul {
         display: flex;
