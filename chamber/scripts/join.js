@@ -8,21 +8,61 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// // Modal functionality
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Get all modal links
+//   const modalLinks = document.querySelectorAll(".membership-cards .card a");
+//   const modals = document.querySelectorAll(".modal");
+//   const closeButtons = document.querySelectorAll(".modal .close");
+
+//   // Open modal when a "Learn More" link is clicked
+//   modalLinks.forEach((link) => {
+//     link.addEventListener("click", function (e) {
+//       e.preventDefault();
+//       const targetModalId = link.getAttribute("href");
+//       const targetModal = document.querySelector(targetModalId);
+//       if (targetModal) {
+//         targetModal.style.display = "block";
+//       }
+//     });
+//   });
+
+//   // Close modal when the close button is clicked
+//   closeButtons.forEach((button) => {
+//     button.addEventListener("click", function () {
+//       const modal = button.closest(".modal");
+//       if (modal) {
+//         modal.style.display = "none";
+//       }
+//     });
+//   });
+
+//   // Close modal when clicking outside the modal content
+//   modals.forEach((modal) => {
+//     modal.addEventListener("click", function (e) {
+//       if (e.target === modal) {
+//         modal.style.display = "none";
+//       }
+//     });
+//   });
+// });
+// // script.js
+////////////////////////////////////////
 // Modal functionality
 document.addEventListener("DOMContentLoaded", function () {
   // Get all modal links
-  const modalLinks = document.querySelectorAll(".membership-cards .card a");
+  const modalLinks = document.querySelectorAll(".learn-more");
   const modals = document.querySelectorAll(".modal");
   const closeButtons = document.querySelectorAll(".modal .close");
 
   // Open modal when a "Learn More" link is clicked
   modalLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const targetModalId = link.getAttribute("href");
-      const targetModal = document.querySelector(targetModalId);
+      e.preventDefault(); // Prevent default link behavior
+      const targetModalId = link.getAttribute("href"); // Get the modal ID from the link
+      const targetModal = document.querySelector(targetModalId); // Find the modal
       if (targetModal) {
-        targetModal.style.display = "block";
+        targetModal.style.display = "flex"; // Show the modal
       }
     });
   });
@@ -30,9 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close modal when the close button is clicked
   closeButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      const modal = button.closest(".modal");
+      const modal = button.closest(".modal"); // Find the parent modal
       if (modal) {
-        modal.style.display = "none";
+        modal.style.display = "none"; // Hide the modal
       }
     });
   });
@@ -41,7 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
   modals.forEach((modal) => {
     modal.addEventListener("click", function (e) {
       if (e.target === modal) {
-        modal.style.display = "none";
+        // Check if the click is outside the modal content
+        modal.style.display = "none"; // Hide the modal
       }
     });
   });
