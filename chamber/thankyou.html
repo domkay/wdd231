@@ -1,7 +1,103 @@
-<h1>Thank You!</h1>
-<p>We have received your application. Here are the details:</p>
-<ul>
-    <li>First Name: <span id="display-first-name"></span></li>
-    <li>Last Name: <span id="display-last-name"></span></li>
-    <!-- Repeat for other fields -->
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Kinshasa Chamber of Commerce</title>
+    <meta name="description"
+        content="Thank you page for the Commerce Chamber website, expressing gratitude for submitting the membership application form.">
+    <meta name="author" content="Madji Kayombo">
+
+    <meta property="og:title" content="Thank You - Kinshasa Chamber of Commerce">
+    <meta property="og:description"
+        content="Thank you page for the Commerce Chamber website, expressing gratitude for submitting the membership application form.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/lushi.png">
+    <meta property="og:url" content="https://www.yourwebsite.com/thankyou.html">
+    <meta property="og:image:alt" content="Image representing the thank you page of the Commerce Chamber of Kinshasa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="entete"><img src="images/favicon.ico" width="50" height="50">
+            <h1>Kinshasa Chamber of Commerce</h1>
+            <button id="myButton"></button>
+        </div>
+        <nav class="menuAnime">
+            <ul class="menuLinks_ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="thank-you-container">
+            <h1>Thank You!</h1>
+            <p>We have received your membership application. Here are the details you submitted:</p>
+            <div class="submitted-info">
+                <p><strong>First Name:</strong> <span id="display-first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="display-last-name"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Business/Organization Name:</strong> <span id="display-business"></span></p>
+                <p><strong>Timestamp:</strong> <span id="display-timestamp"></span></p>
+            </div>
+            <p>We will review your application and get back to you shortly. If you have any questions, feel free to <a
+                    href="mailto:info@kinshasachamber.com">contact us</a>.</p>
+            <a href="index.html" class="home-button">Return to Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@kinshasachamber.com">info@kinshasachamber.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Chamber Street, Kinshasa, DRC</p>
+        </section>
+        <section class="footer_social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_youtube.png" alt="Youtube" width="32" height=auto>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_twitter.png" alt="Twitter" width="32" height=auto>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_linkedin.png" alt="LinkedIn" width="32" height=auto>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>&copy; <span id="currentYear"></span> Madji Kayombo - Kinshasa Chamber of Commerce</p>
+            <p>Madji Kayombo, WDD 231 Project</p>
+            <p id="lastModified">This page was last modified on: <span id="last-modified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

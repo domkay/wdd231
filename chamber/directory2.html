@@ -4,98 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinshasa Chamber of Commerce - Business Directory</title>
+    <title>Commerce Chamber of Kinshasa - Directory</title>
     <meta name="description"
-        content="Search for businesses in Kinshasa, Democratic Republic of the Congo. Find local businesses by category or keyword.">
-    <meta name="author" content="Your Name (or Team Name)">
+        content="Directory page for the Commerce Chamber website, providing business listings and information.">
+    <meta name="author" content="Madji Kayombo">
 
-    <meta property="og:title" content="Kinshasa Chamber of Commerce - Business Directory">
+    <meta property="og:title" content="Commerce Chamber of Kinshasa - Directory">
     <meta property="og:description"
-        content="Search for businesses in Kinshasa, Democratic Republic of the Congo. Find local businesses by category or keyword." />
+        content="Directory page for the Commerce Chamber website, providing business listings and information.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https:// [Image URL of Kinshasa or Kinshasa Businesses] ">
-    <meta property="og:url" content="https://www.kinshasacommercechamber.com/directory">
+    <meta property="og:image" content="images/lushi.png">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:image:alt" content="Image representing the directory page of the Commerce Chamber of Kinshasa">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <link rel="icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js" defer></script>
-
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
+    <link rel="stylesheet" href="styles/directory2.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/kinshasa-chamber-logo.png" alt="Kinshasa Chamber of Commerce Logo">
-            </a>
-            <h1 class="site-title">Kinshasa Chamber of Commerce</h1>
+    <header>
+        <div class="entete">
+            <img src="images/favicon.ico" alt="Kinshasa Chamber of Commerce logo" class="header-logo">
+            <h1>Kinshasa Chamber of Commerce</h1> <button id="menu-toggle"></button>
         </div>
+        <nav class="menuAnime">
+            <ul class="menuLinks_ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="currentPage">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="navigation">
-        <div class="container">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="discover.html" class="nav-link">Discover</a>
-                </li>
-                <li class="nav-item active">
-                    <a href="directory.html" class="nav-link">Directory</a>
-                </li>
-                <li class="nav-item">
-                    <a href="join.html" class="nav-link">Join</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <main>
-        <div class="container">
-            <h1>Business Directory</h1>
-            <div class="directory-search">
-                <input type="text" id="search-input" placeholder="Search for businesses...">
-            </div>
-            <ul class="business-list">
-            </ul>
-        </div>
+        <h2>Directory</h2>
+        <nav id="view-options"> <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </nav>
+        <div id="cards" class="grid-view"></div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="copyright">&copy;
-                <?php echo date("Y"); ?> Kinshasa Chamber of Commerce. All Rights Reserved.
-            </p>
-            <ul class="social-links">
+    <footer>
+        <section>
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@kinshasachamber.com">info@kinshasachamber.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Chamber Street, Kinshasa, DRC</p>
+        </section>
+        <section class="footer_social">
+            <h3>Follow Us</h3>
+            <ul>
                 <li>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
+                    <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_youtube.png" alt="Follow us on Youtube" width="32"> </a>
                 </li>
                 <li>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                    <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_twitter.png" alt="Follow us on Twitter" width="32"> </a>
                 </li>
                 <li>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                    <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_linkedin.png" alt="Follow us on LinkedIn" width="32"> </a>
                 </li>
             </ul>
-        </div>
+        </section>
+        <section>
+            <p>© <span id="currentYear"></span> Madji Kayombo - Kinshasa Chamber of Commerce</p>
+            <p>Madji Kayombo, WDD 231 Project</p>
+            <p id="lastModified">This page was last modified on: <span id="last-modified"></span></p>
+        </section>
     </footer>
-
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+/* Thank You Page Styling */
+.thank-you-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you-container h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.thank-you-container p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.submitted-info {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submitted-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.submitted-info strong {
+    color: var(--link-color);
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--link-hover-color);
+}
