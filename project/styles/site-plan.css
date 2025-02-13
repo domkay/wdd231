@@ -1,0 +1,163 @@
+/* Define CSS Variables in :root */
+:root {
+    /* Color Schema */
+    --primary-color: #1A73E8;
+    --secondary-color: #34A853;
+    --background-color: #FFFFFF;
+    --text-color: #202124;
+    --accent-color: #F1F3F4;
+
+    /* Typography */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-accent: 'Montserrat', sans-serif;
+    --font-size-body: 16px;
+    --font-size-heading: 24px;
+    --font-size-subheading: 20px;
+}
+
+/* Universal Selector for Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: var(--font-accent);
+}
+
+h1 {
+    font-size: var(--font-size-heading);
+}
+
+h2 {
+    font-size: var(--font-size-subheading);
+    margin: 10px 0 10px 0;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Color Schema Styles */
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid var(--text-color);
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.background-color {
+    background-color: var(--background-color);
+}
+
+.text-color {
+    background-color: var(--text-color);
+}
+
+/* Typography Styles */
+.font-example {
+    font-size: 18px;
+}
+
+.roboto {
+    font-family: var(--font-primary);
+}
+
+.open-sans {
+    font-family: var(--font-secondary);
+}
+
+.montserrat {
+    font-family: var(--font-accent);
+}
+
+/* Wireframe Styles */
+.wireframe {
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.wireframe.mobile {
+    max-width: 300px;
+}
+
+.wireframe.desktop {
+    max-width: 800px;
+}
+
+.header,
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.search-bar,
+.filter-options,
+.product-card {
+    background-color: var(--accent-color);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Section Styles */
+section {
+    background: var(--background-color);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
