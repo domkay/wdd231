@@ -86,6 +86,10 @@
     margin-bottom: 1em;
 }
 
+#view-options {
+    display: none;
+}
+
 #view-options button {
     padding: 0.5em 1em;
     margin: 0 0.5em;
@@ -133,6 +137,31 @@
         align-self: flex-start;
         /* Image aligned to the top in larger screen list view */
     }
+
+    #view-options button {
+        display: grid;
+        padding: 0.5em 1em;
+        margin: 0 0.5em;
+        /* Space between buttons */
+        border: none;
+        background-color: #eee;
+        /* Light background */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    #view-options button:hover {
+        background-color: #ddd;
+    }
+
+    #view-options button.active {
+        /* Style for the active button */
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    }
+
+
 }
 
 @media (min-width: 900px) {
