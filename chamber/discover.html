@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce Chamber of Kinshasa - Discover</title>
+    <meta name="description"
+        content="Discover page of the Commerce Chamber website, providing business listings and information.">
+    <meta name="author" content="Madji Kayombo">
+
+    <meta property="og:title" content="Commerce Chamber of Kinshasa - Home">
+    <meta property="og:description"
+        content="Directory page for the Commerce Chamber website, providing business listings and information.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/lushi.png">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:image:alt" content="Image representing the directory page of the Commerce Chamber of Kinshasa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="entete">
+            <img src="images/favicon.ico" width="50" height="50" alt="Chamber Logo">
+            <h1>Kinshasa Chamber of Commerce</h1>
+            <button id="myButton"></button>
+        </div>
+        <nav class="menuAnime">
+            <ul class="menuLinks_ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="currentPage">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sidebar">
+            <h2>Visitor Information</h2>
+            <p id="visitMessage">Welcome! Let us know if you have any questions.</p>
+        </section>
+
+        <section class="grid-container">
+            <!-- Cards will be dynamically inserted here by JavaScript -->
+        </section>
+    </main>
+    <footer>
+        <section class="footer_contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@kinshasachamber.com">info@kinshasachamber.com</a></p>
+            <p>Phone: +123-456-7890</p>
+            <p>Address: 123 Chamber Street, Kinshasa, DRC</p>
+        </section>
+        <section class="footer_social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>
+                    <a href="https://youtube.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_youtube.png" alt="Youtube" width="32" height=auto>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_twitter.png" alt="Twitter" width="32" height=auto>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/company/kinshasachamber" target="_blank" rel="noopener noreferrer">
+                        <img src="images/icon_linkedin.png" alt="LinkedIn" width="32" height=auto>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer_about">
+            <p>&copy; <span id="currentYear"></span> Madji Kayombo - Kinshasa Chamber of Commerce</p>
+            <p>Madji Kayombo, WDD 231 Project</p>
+            <p id="lastModified">This page was last modified on: <span id="last-modified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -4,4 +4,4 @@ document.getElementById("currentYear").textContent = currentYear;
 const lastModified = document.lastModified;
 
 // Display the last modified date in the paragraph
-document.getElementById("lastModified").textContent += lastModified;
+document.getElementById("last-modified").textContent += lastModified;
