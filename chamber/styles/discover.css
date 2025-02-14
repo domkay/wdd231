@@ -8,7 +8,7 @@ main {
 }
 
 h2 {
-    color: var(--primary-color);
+    color: rgb(255, 255, 255);
     margin-bottom: 1rem;
 }
 
@@ -103,7 +103,7 @@ h2 {
 
 .card button {
     padding: 0.4rem 0.8rem;
-    background-color: var(--link-color);
+    background-color: #0834c4;
     color: var(--text-color);
     border: none;
     border-radius: 3px;
