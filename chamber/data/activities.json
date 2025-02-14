@@ -1,50 +1,50 @@
 [
     {
         "title": "Kinshasa National Museum",
-        "image": "images/museum.webp",
-        "address": "123 Museum Road, Kinshasa",
+        "image": "images/musee.webp",
+        "address": "Boulevard Triomphal, Kinshasa",
         "description": "Explore the rich cultural heritage of the Democratic Republic of Congo at this iconic museum."
     },
     {
         "title": "Marché de la Liberté",
-        "image": "images/market.webp",
+        "image": "images/market_cropped.webp",
         "address": "456 Market Street, Kinshasa",
         "description": "A bustling market offering a variety of local goods, crafts, and fresh produce."
     },
     {
         "title": "Lola Ya Bonobo Sanctuary",
-        "image": "images/bonobo.webp",
-        "address": "789 Sanctuary Road, Kinshasa",
+        "image": "images/lola_cropped.webp",
+        "address": "Petites Chutes des Lukaya, Kinshasa",
         "description": "A sanctuary dedicated to the protection and rehabilitation of bonobos, a rare primate species."
     },
     {
         "title": "Kinshasa Botanical Garden",
-        "image": "images/garden.webp",
-        "address": "101 Garden Lane, Kinshasa",
+        "image": "images/botanicresized.webp",
+        "address": "Avenue Kasa-Vubu, Kinshasa",
         "description": "A serene escape featuring a diverse collection of plants and flowers native to the region."
     },
     {
         "title": "Stade des Martyrs",
-        "image": "images/stadium.webp",
-        "address": "202 Stadium Avenue, Kinshasa",
+        "image": "images/stade_cropped.webp",
+        "address": "Boulevard Triomphal, Kinshasa",
         "description": "One of the largest stadiums in Africa, hosting major sports events and concerts."
     },
     {
-        "title": "Kinshasa Zoo",
-        "image": "images/zoo.webp",
+        "title": "Kingakati valley",
+        "image": "images/kingakati2_cropped.webp",
         "address": "303 Zoo Road, Kinshasa",
         "description": "Home to a variety of wildlife species, offering an educational experience for visitors."
     },
     {
         "title": "N'Sele River",
-        "image": "images/river.webp",
-        "address": "404 Riverbank Road, Kinshasa",
+        "image": "images/nsele2_cropped.webp",
+        "address": "Nsele , Kinshasa",
         "description": "A picturesque river perfect for boat rides and enjoying the natural beauty of Kinshasa."
     },
     {
         "title": "Kinshasa Cultural Center",
-        "image": "images/cultural-center.webp",
-        "address": "505 Culture Avenue, Kinshasa",
+        "image": "images/culturel_res.webp",
+        "address": "Aviateurs 66, Gombe, Kinshasa",
         "description": "A hub for art, music, and cultural events showcasing the vibrant spirit of Kinshasa."
     }
 ]

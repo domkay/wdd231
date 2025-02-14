@@ -43,12 +43,12 @@ async function displayActivities() {
       card.className = "card";
 
       card.innerHTML = `
-        <h2>${activity.title}</h2>
-        <figure>
+        <h2 class="act-title">${activity.title}</h2>
+        <figure class="act-image">
             <img src="${activity.image}" alt="${activity.title}" loading="lazy">
         </figure>
-        <address>${activity.address}</address>
-        <p>${activity.description}</p>
+        <address class="act-address">${activity.address}</address>
+        <p class="act-description">${activity.description}</p>
         <button>Learn More</button>
       `;
 
