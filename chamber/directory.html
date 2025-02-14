@@ -33,11 +33,11 @@
 
 <body>
     <header>
-        <div class="entete"><img src="images/favicon.ico" width="50" height="50">
+        <div class="entete"><img src="images/favicon.ico" width="50" height="50" alt="Kinshasa Chamber Logo">
             <h1>Kinshasa Chamber of Commerce</h1>
-            <button id="myButton"></button>
+            <button id="myButton" aria-label="Toggle Theme"></button>
         </div>
-        <nav class="menuAnime">
+        <nav class="menuAnime" aria-label="Main Navigation">
             <ul class="menuLinks_ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -49,8 +49,9 @@
 
     <main>
         <h2>Directory</h2>
-        <nav id="view-options"> <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
+        <nav id="view-options">
+            <button id="grid-view" aria-label="Switch to Grid View">🔲 Grid View</button>
+            <button id="list-view" aria-label="Switch to List View">📃 List View</button>
         </nav>
         <div id="cards" class="grid-view"></div>
     </main>

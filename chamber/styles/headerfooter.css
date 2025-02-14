@@ -50,10 +50,7 @@ header {
 .entete h1 {
     text-align: center;
     justify-self: center;
-    /* Ensures it stays centered */
     font-size: 1.8rem;
-    white-space: nowrap;
-    /* Prevents wrapping */
 }
 
 /* ===== HAMBURGER MENU ===== */
