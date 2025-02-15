@@ -201,17 +201,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    padding: 20px;
-    border-radius: 8px;
-    z-index: 1;
-    /* Ensure text is above overlay */
+    width: 90%;
+    /* Ensures content is not too wide */
+    max-width: 600px;
+    /* Keeps it centered */
+    text-align: center;
 }
 
 .hero-content h2 {
     margin: 0;
     font-size: 2.5rem;
     color: white;
+    word-wrap: break-word;
 }
 
 .hero-content p {
@@ -222,13 +223,15 @@ body {
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: var(--link-color);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    text-align: center;
+    width: auto;
 }
 
 .cta-button:hover {
@@ -247,6 +250,16 @@ body {
     /* .spotlight-card {
         flex: 1 1 calc(50% - 20px);
     } */
+    .hero-content {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .cta-button {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
 }
 
 @media (min-width: 900px) {
