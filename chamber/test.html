@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Approach</title>
+    <style>
+        /* Hide elements by default */
+        .desktop-content,
+        .mobile-content {
+            display: none;
+        }
+
+        /* Show elements based on screen size */
+        @media (min-width: 601px) {
+            .desktop-content {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .mobile-content {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="desktop-content">
+        This content is for larger screens.
+    </div>
+    <div class="mobile-content">
+        This content is for smaller screens.
+    </div>
+
+    <script>
+        // Dynamically add content based on screen size
+        function addDynamicContent() {
+            const screenWidth = window.innerWidth;
+            const dynamicContent = document.createElement('p');
+
+            if (screenWidth <= 600) {
+                dynamicContent.textContent = 'Dynamically added content for smaller screens.';
+            } else {
+                dynamicContent.textContent = 'Dynamically added content for larger screens.';
+            }
+
+            document.body.appendChild(dynamicContent);
+        }
+
+        window.addEventListener('load', addDynamicContent);
+        window.addEventListener('resize', addDynamicContent);
+    </script>
+</body>
+
+</html>

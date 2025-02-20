@@ -69,10 +69,10 @@ header {
     transform: rotate(90deg);
 }
 
-#myButton::before {
+/*#myButton::before {
     content: "\2630";
     /* ☰ Menu Icon */
-}
+/*}*/
 
 #myButton.open::before {
     content: "✖";

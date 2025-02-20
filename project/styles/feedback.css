@@ -1,0 +1,111 @@
+/* Feedback Form Styles */
+.feedback-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group select,
+.form-group textarea,
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"],
+button#clearFilters {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+button[type="submit"]:hover,
+button#clearFilters:hover {
+    background-color: #2a8b4a;
+
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Submitted Feedback Styles */
+.submitted-feedback {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+}
+
+.submitted-feedback h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#feedbackList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.feedback-item h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.feedback-item p {
+    margin: 5px 0;
+    color: var(--text-color);
+}
