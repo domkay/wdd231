@@ -1,9 +1,9 @@
 /* Define CSS Variables in :root */
 :root {
     /* Color Schema */
-    --primary-color: #0b56b8;
+    --primary-color: #4C3810;
     /* Blue */
-    --secondary-color: #34A853;
+    --secondary-color: #561313;
     /* Green */
     --background-color: #FFFFFF;
     /* White */
@@ -48,6 +48,7 @@ header {
     background-color: var(--primary-color);
     color: var(--background-color);
     position: relative;
+    z-index: 2;
 }
 
 header .logo {
@@ -114,7 +115,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: var(--background-color);
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
